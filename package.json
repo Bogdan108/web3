@@ -1,0 +1,24 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "description": "homework for web3 course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ethersproject/constants": "^5.7.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@openzeppelin/hardhat-upgrades": "^3.4.0",
+    "ethers": "^6.13.2",
+    "hardhat": "^2.22.12"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "chai": "^4.5.0"
+  }
+}
