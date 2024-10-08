@@ -8,11 +8,9 @@ async function main() {
         const contract = await token.attach(contractAddr);
 
         await contract.transfer(addr1.address, 50000000n);
-
-        await contract.approve(addr1.address, 50000000000000000000n);
-        await contract.connect(addr1).transferFrom(owner.address, addr1.address, 50000000000000000000n);
-
         await contract.buyTokens({ value: 10000000n });
+        await contract.approve(addr1.address, 50000000000000000000n);
+        await contract.connect(addr1).transferFrom(owner.address, addr1.address, 50000000000000000000n)
 
         ownerBalance = await contract.balanceOf(owner.address);
         addr1Balance = await contract.balanceOf(addr1.address);
